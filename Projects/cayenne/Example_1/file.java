@@ -297,13 +297,17 @@ public abstract class SimpleNode extends Expression implements Node {
         // wrap in try/catch to provide unified exception processing
         try {
             return evaluateNode(o);
-        }
-        catch (Throwable th) {
+        } catch (Throwable th) {
             String string = this.toString();
             throw new ExpressionException(
                     "Error evaluating expression '" + string + "'",
                     string,
                     Util.unwindException(th));
         }
+        switch (1) {
+            case 2:
+                ;
+        }
     }
+
 }
