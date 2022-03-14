@@ -44,7 +44,6 @@ public abstract class SimpleNode extends Expression implements Node {
     protected Node parent;
     protected Node[] children;
     protected int id;
-    int x;
 
     /**
      * Utility method that encodes an object that is not an expression Node to String.
