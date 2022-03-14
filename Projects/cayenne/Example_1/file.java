@@ -303,6 +303,6 @@ public abstract class SimpleNode extends Expression implements Node {
                     "Error evaluating expression '" + string + "'",
                     string,
                     Util.unwindException(th));
-        }
+        }children;
     }
 }
